@@ -1,5 +1,8 @@
 import java.util.Scanner;
-public class Main {
+//import java.io.FileWriter;
+//import java.io.IOException;
+import java.io.*;
+public class Main{
     public static void main(String[] args) {
 //        System.out.println("bye world");
 
@@ -136,7 +139,7 @@ public class Main {
 
 //Функции и методы
 //        sayHi();
-//        Lib.sayHi();
+//        lib.sayHi();
 
 //Управляющие конструкции
         //Тернарный оператор
@@ -147,12 +150,72 @@ public class Main {
         //В тернарном операторе не получится записать вывод(sout), т.к. значения должны возвращаться
 
 //Оператор вывода
+        /*int mounth = value;
+        String text = "";
+        switch (mounth) {
+            case 1:
+                text = "Autumn";
+                break;
+            //...
+            default:
+                text = "mistake";
+                break;
+        }
+        System.out.println(text);
+        iScanner.close();*/
+//Циклы(while, do-while, for(+ foreach, for in)
+//Цикл do-while это цикл с постусловием, то есть сначала выполняется код, потом проверяет на условие
 
+        //continue, break
+        //Операторы для управления циклами — continue и break.
+        //Выполнение следующей итерации цикла — continue.
+        //Прерывание текущей итерации цикла — break.
+        //* ближайшего к оператору
+
+//        int[] arr = new int[] {1, 2, 3, 4, 5, 25};
+//        for (int item: arr) {   //foreach в Java выглядит так
+//            System.out.println(item);
+//        }
+
+//Работа с файлами
+        //Создание и запись/дозапись
+//        try (FileWriter fw = new FileWriter("file.txt", false)) {
+//            fw.write("line 1");
+//            fw.append('\n');
+//            fw.append('2');
+//            fw.append('\n');
+//            fw.write("line 3");
+//            fw.flush();
+//        } catch (IOException ex) {
+//            System.out.println(ex.getMessage());
+//    }
     }
-    static String getType(Object o) {
-        return o.getClass().getSimpleName();
-    }
+
+        //Чтение (вариант посимвольно)
+//    static void readchar(String[] args) throws Exception{
+//        FileReader fr = new FileReader("file.txt");
+//        int c;
+//        while ((c = fr.read()) != -1) {
+//            char ch = (char) c;
+//            if (ch == '\n') {
+//                System.out.print(ch);
+//            } else {
+//                System.out.print(ch);
+//    }}}
+        //Чтение (вариант построчно)
+//    static void readline(String[] args) throws Exception{
+//        BufferedReader br = new BufferedReader(new FileReader("file.txt"));
+//        String str;
+//        while ((str = br.readLine()) != null) {
+//            System.out.printf("== %s ==\n", str);
+//        }br.close();
+//    }
+
+//    static String getType(Object o) {
+//        return o.getClass().getSimpleName();
+//    }
+
 //    static public void sayHi(){
 //        System.out.println("hi");
-    }
+    //}
 }
