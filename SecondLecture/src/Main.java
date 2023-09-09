@@ -59,6 +59,16 @@ public class Main {
 //        mkdir(): создает новый каталог
 //        renameTo(File dest): переименовывает файл или каталог
 
+//Логирование
+//        Использование
+//        Logger logger = Logger.getLogger()
+//        Уровни важности
+//        INFO, DEBUG, ERROR, WARNING и др.
+//        Вывод
+//        ConsoleHandler info = new ConsoleHandler();
+//        log.addHandler(info);
+//        Формат вывода: структурированный, абы как*
+//        XMLFormatter, SimpleFormatter
 
     }
 }
