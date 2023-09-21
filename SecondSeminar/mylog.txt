@@ -1,0 +1,6 @@
+сент. 21, 2023 10:40:13 PM LoggerTest main
+INFO: This is an informational message.
+сент. 21, 2023 10:40:13 PM LoggerTest main
+WARNING: This is a warning message.
+сент. 21, 2023 10:40:13 PM LoggerTest main
+SEVERE: This is a severe error message.
