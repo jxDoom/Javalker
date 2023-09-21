@@ -7,7 +7,7 @@ import java.util.Objects;
 public class SQLTask {
     public static void main(String[] args) {
         String sql = "select * from students where ";
-        String stringSQL = "{\"name\":\"Ivanov\", \"country\":\"Russia\", \"city\":\"Moscow\", \"age\":\"null\"} ";
+        String stringSQL = "\"name\":\"Ivanov\", \"country\":\"Russia\", \"city\":\"Moscow\", \"age\":\"null\"";
         String[] tmpSQL = stringSQL.split(","); // разделили на подстроки
         StringBuilder clearSQL = new StringBuilder();
         for (String s : tmpSQL) {
@@ -15,7 +15,7 @@ public class SQLTask {
         } // избавились от подстрок с null
 
         stringSQL = clearSQL.toString();
-        String[] res = stringSQL.replace("{", "").replace("}", "").split(" ");
+        String[] res = stringSQL.replace('{', ' ').replace('}', ' ').split(" ");
         String[] resTMP;
         // в каждую подстроку разделим на левую и правую части, в левой удалим " в правой заменим на '
         StringBuilder result = new StringBuilder(sql);
