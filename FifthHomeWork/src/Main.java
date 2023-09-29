@@ -23,7 +23,7 @@ public class Main {
                 return sb.toString();
             }
         };
-        // заполяем с учетом разных номеров у человека
+        // заполняем с учетом разных номеров у человека
         for (int i = 0; i < names.length; i++) {
             ArrayList<Integer> tmp = new ArrayList<>(1);
             if (phoneBook.containsKey(names[i])) {
