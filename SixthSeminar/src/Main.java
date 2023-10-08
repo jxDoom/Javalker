@@ -28,16 +28,25 @@ public class Main {
 ////        System.out.println(Arrays.toString(arr));
 //        System.out.println(getNumSet(arr));
 
-        Dog dog = new Dog("bobik", new ArrayList<>(List.of("beshenstvo")));
-        System.out.println(dog.toString());
-    }
+//        Dog dog = new Dog("bobik", new ArrayList<>(List.of("beshenstvo")));
+//        System.out.println(dog.toString());
+//    }
+//
+//    public static float getNumSet(int[] array){
+//    Set<Integer> numSet = new TreeSet<Integer>();
+//    for(int i = 0; i < array.length; i++){
+//        numSet.add(array[i]);
+//    }
+//    System.out.println(numSet);
+//    return (float) (numSet.size() * 100) / array.length;
 
-    public static float getNumSet(int[] array){
-    Set<Integer> numSet = new TreeSet<Integer>();
-    for(int i = 0; i < array.length; i++){
-        numSet.add(array[i]);
-    }
-    System.out.println(numSet);
-    return (float) (numSet.size() * 100) / array.length;
+        Dog dog1 = new Dog("Bob", "Mops", 10, new Date(1202324800), 5, true);
+        Dog dog2 = new Dog("Pirat", "Ovcharka", 7, new Date(8082016), 12, true);
+        Dog dog3 = new Dog("Guffi", "Doberman", 5, new Date(1311208), 8, false);
+
+        DogClinic clinic = new DogClinic();
+//        clinic.checkDog(dog1);
+        clinic.checkDog(dog2);
+        clinic.checkDog(dog3);
     }
 }
